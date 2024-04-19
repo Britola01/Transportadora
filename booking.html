@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar Transporte &mdash; Rapidex website</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav class="top_nav">
+      <div class="container top_container">
+        <div class="logo_box">
+          <img src="./images/Logo.png" alt="" class="logo" />
+        </div>
+        <div class="top_details">
+          <div class="details">
+            <img
+              src="./images/icons/nav-icon-1.png"
+              alt=""
+              class="details_icon" />
+            <div class="details_text">
+              <p>Segunda - Sábado | 9:00 - 17:00</p>
+              <p>Fechado aos Domingos</p>
+            </div>
+          </div>
+          <div class="details">
+            <img
+              src="./images/icons/nav-icon-2.png"
+              alt=""
+              class="details_icon" />
+            <div class="details_text">
+              <p>Email</p>
+              <p>rapidextransport@gmail.com</p>
+            </div>
+          </div>
+          <div class="details">
+            <img
+              src="./images/icons/nav-icon-3.png"
+              alt=""
+              class="details_icon" />
+            <div class="details_text">
+              <p>Contate a gente</p>
+              <p>(+55)2899916-2536</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <nav class="nav">
+        <div class="container nav_container">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="./index2.html" class="nav_link">Início</a></li>
+            <li class="nav_item">
+              <a href="./about.html" class="nav_link">Sobre</a>
+            </li>
+            <li class="nav_item">
+              <a href="./blog.html" class="nav_link">Blog</a>
+            </li>
+            <li class="nav_item">
+              <a href="./contact.html" class="nav_link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container mini_header_container">
+          <div class="header_wrapper">
+              <h5 class="header_secondary_title">Serviços e Operações</h5>
+              <h1 class="header_main_title">Agendar Transporte</h1>
+            </nav>
+                <section class="section">
+                    <form action="jobs.html" method="post" class="contact_form">
+                        <div class="form_containers">
+                            <div class="form_container">
+                                <input type="text" class="form_input" placeholder="Nome" required />
+                            </div>
+                            <div class="form_container">
+                                <input type="email" class="form_input" placeholder="Email" required />
+                            </div>
+                            <div class="form_container">
+                                <input type="tel" class="form_input" placeholder="Telefone" required />
+                            </div>
+                            <div class="form_container">
+                                <input type="text" class="form_input" placeholder="Cidade" required />
+                            </div>
+                            <div class="form_container">
+                                <label for="date">Data do Transporte:</label>
+                                <input type="date" id="date" name="date" class="form_input" required />
+                            </div>
+                            <div class="form_container">
+                                <label for="time">Hora do Transporte:</label>
+                                <input type="time" id="time" name="time" class="form_input" required />
+                            </div>
+                        </div>
+                        <textarea name="message" class="form_text" placeholder="Escreva Aqui" required></textarea>
+                        <a href="./jobs.html" type="submit" class="nav_btn">Confirmar Agendamento</a>
+                    </form>                
+                </section>
+            </div>
+        </header>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer_p">Copyright © Rapidex | Designed by Pedro Brito.</p>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>
