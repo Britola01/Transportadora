@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (email === 'teste@gmail.com' && password === 'senha123') {
             localStorage.setItem('isLoggedIn', 'true'); // Seta o usuário como logado
-            window.location.href = './index2.html'; // Redireciona para a página principal
+            window.location.href = '/index2.html'; // Redireciona para a página principal
         } else {
             alert('Email ou senha incorretos!');
         }
